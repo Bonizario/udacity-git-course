@@ -1,6 +1,15 @@
-# Git Cheat Sheet
+<p align="center">
+  <img alt="Git Logo" title="Git Logo" src="logo.png" />
+</p>
 
-## Global Configs
+<br />
+<br />
+
+<h3 align="center">Notes taken during the Udacity <a href="https://classroom.udacity.com/courses/ud123" target="_blank">Version Control with Git</a> course</h3>
+
+<br />
+
+## :pushpin: Global Configs
 
 Sets up Git with your name
 
@@ -58,7 +67,7 @@ Atom Editor Setup
 
 - Note: if closing a file that Git opened doesn't complete the given command, then you need to close the entire editor
 
-## Git uses Less (terminal pager program):
+## :pushpin: Git uses Less (terminal pager program)
 
 - to scroll **down**, press
 
@@ -74,7 +83,7 @@ Atom Editor Setup
 
 - press `q` to **quit** out of the log (returns to the regular command prompt)
 
-## The .gitignore file
+## :pushpin: The .gitignore file
 
 - Add this file to your project in the same directory that the hidden .git directory is located
 
@@ -84,11 +93,11 @@ Atom Editor Setup
 
 ---
 
-## git init
+## :pushpin: git init
 
 Create brand new repository on your computer
 
-## git clone
+## :pushpin: git clone
 
 Copy existing repositories from somewhere else to your local computer
 
@@ -98,13 +107,13 @@ $ git clone "url" "new-dir-name"
 $ git clone "path-to-repository-to-clone" "new-dir-name"
 ```
 
-## git status
+## :pushpin: git status
 
 - Check the status of a repository
 
 - Always run this command when returning to a project after a period of time
 
-## git log
+## :pushpin: git log
 
 Displays information about the existing commits. By _default_, displays:
 
@@ -161,7 +170,7 @@ $ git log --oneline --graph --all
 
 - shows the branching of all the branches in the repository
 
-## git show
+## :pushpin: git show
 
 Displays information about the given commit. By _default_:
 
@@ -183,7 +192,7 @@ $ git show "reference-to-commit" --stat -p -w
 
 - it can be combined with other tags
 
-## git add
+## :pushpin: git add
 
 Add files from the working directory to the staging index
 
@@ -205,7 +214,7 @@ $ git add .
 
 - add all files and directories (including all nested files and directories)
 
-## git commit
+## :pushpin: git commit
 
 Take files from the staging index and save them in the repository
 
@@ -229,7 +238,7 @@ $ git commit -m "message"
 
 - The first line of a commit message is the message itself. Leave a blank line and then type the body or explanation including details (e.g. URL links)
 
-## git diff
+## :pushpin: git diff
 
 Displays the difference between two versions of a file (its output is the same of `$ git log -p`). By _default_:
 
@@ -237,7 +246,7 @@ Displays the difference between two versions of a file (its output is the same o
 - the location of the lines that have been added/removed
 - the actual changes that have been made
 
-## git tag
+## :pushpin: git tag
 
 Add tags to specific commits
 
@@ -263,7 +272,7 @@ $ git tag -d "tag-name"
 
 - git log shows the tag associated to the commit at the end of the first line
 
-## git branch
+## :pushpin: git branch
 
 Allows multiple lines of development. It can be used to:
 
@@ -291,7 +300,7 @@ $ git branch -d "branch-name"
 
 - To force deletion, you need to use the `-D` flag
 
-## git checkout
+## :pushpin: git checkout
 
 Switch between different branches and tags.
 
@@ -315,7 +324,7 @@ $ git checkout "file-name"
 
 - it can be used to discard changes in the working directory
 
-## git merge
+## :pushpin: git merge
 
 Combines changes on different branches
 
@@ -341,7 +350,7 @@ $ git reset --hard HEAD^ [if you merge on the wrong branch]
 
 - Regular type of merge: two divergent branches are combined and a merge commit is created
 
-## merge conflicts
+## :pushpin: merge conflicts
 
 A merge conflict will happen when the **_exact_** same line(s) are changed in separate branches
 
@@ -375,7 +384,7 @@ Resume:
 - stage the file(s)
 - make a commit
 
-## git commit --amend
+## :pushpin: git commit --amend
 
 Alter the most-recent commit
 
@@ -398,7 +407,7 @@ $ git commit --amend -m "message"
 
 - pass the new message directly on the command line
 
-## relative commit references
+## :pushpin: relative commit references
 
 Ancestry References:
 
@@ -430,7 +439,7 @@ E.g.:
 
 -HEAD~4^2 points down _**4 commits**_ + _**one commit in second parent**_ = _**5 commits**_ (the last commit isn't in the master branch, it is in the second branch)
 
-## git revert
+## :pushpin: git revert
 
 Reverses given commit
 
@@ -440,7 +449,7 @@ $ git revert "reference-to-commit"
 
 - Git takes the changes that were made in a commit and does the exact opposite of them. After, creates a new commit to record the change
 
-## git reset
+## :pushpin: git reset
 
 - Note: before doing any resetting, create a backup branch on the most-recent commit so that you can get back to the commits if you make a mistake
 
