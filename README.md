@@ -447,7 +447,7 @@ Reverses given commit
 $ git revert "reference-to-commit"
 ```
 
-- Git takes the changes that were made in a commit and does the exact opposite of them. After, creates a new commit to record the change
+- Git takes the changes that were made in a commit and does the exact opposite of them. Then, creates a new commit to record the change
 
 ## :pushpin: git reset
 
